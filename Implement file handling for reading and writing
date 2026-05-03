@@ -1,0 +1,15 @@
+file=open("Blank.txt","w")
+file.write("This is the first line of this file.\n")
+file.write("This is the second line of this file.\n")
+file.close()
+print("Data written successfully.")
+
+file = open("Blank.txt","r")
+Content=file.read()
+print(Content)
+file.close()
+
+file = open("Blank.txt","w")
+file.write("This line has been appended later.")
+print("Appended succssfully.")
+file.close()
